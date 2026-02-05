@@ -1,87 +1,120 @@
-<style>
-  body {
-    margin: 0;
-    background: radial-gradient(circle at top, #0b1a2d, #050b14);
-    color: #dbe9ff;
-    font-family: 'Arial', sans-serif;
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para você 🤍</title>
 
-    /* centralização real */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    min-height: 100vh;
-    padding: 16px; /* ESSENCIAL no celular */
-    text-align: center;
-  }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #0b1a2d, #050b14);
+      color: #dbe9ff;
+      font-family: Arial, sans-serif;
 
-  .container {
-    width: 100%;
-    max-width: 420px; /* um pouco maior */
-    padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    background: rgba(10, 25, 50, 0.45);
-    border-radius: 20px;
-    box-shadow: 0 0 40px rgba(60, 140, 255, 0.18);
-    backdrop-filter: blur(6px);
+      min-height: 100svh; /* resolve bug do mobile */
+      padding: 20px;
+      text-align: center;
+    }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  img {
-    width: 100%;
-    max-height: 55vh; /* evita ficar pequeno demais */
-    object-fit: cover;
-
-    border-radius: 14px;
-    margin-bottom: 20px;
-    border: 2px solid #4da3ff;
-    box-shadow: 0 0 25px rgba(77, 163, 255, 0.5);
-  }
-
-  .hint {
-    font-size: 14px;
-    opacity: 0.85;
-    margin-bottom: 14px;
-    color: #8fc1ff;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #e6f0ff;
-    margin-bottom: 20px;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 13px 24px;
-    border-radius: 22px;
-    background: #4da3ff;
-    color: #020b1a;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 0 22px rgba(77, 163, 255, 0.6);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .btn:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 30px rgba(77, 163, 255, 0.9);
-  }
-
-  /* ajuste fino só para celular */
-  @media (max-width: 600px) {
     .container {
-      max-width: 95vw;
-      padding: 22px;
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+
+      background: rgba(10, 25, 50, 0.65);
+      border-radius: 20px;
+
+      box-shadow:
+        0 0 40px rgba(60, 140, 255, 0.25),
+        0 0 0 1px rgba(120, 180, 255, 0.15);
+
+      backdrop-filter: blur(6px);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hint {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 14px;
+      color: #8fc1ff;
+      letter-spacing: 1px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 55svh;
+      object-fit: cover;
+
+      border-radius: 14px;
+      margin-bottom: 20px;
+      border: 2px solid #4da3ff;
+      box-shadow: 0 0 25px rgba(77, 163, 255, 0.5);
     }
 
     p {
-      font-size: 15.5px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e6f0ff;
+      margin-bottom: 20px;
     }
-  }
-</style>
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 22px;
+      background: #4da3ff;
+      color: #020b1a;
+      text-decoration: none;
+      font-weight: bold;
+
+      box-shadow: 0 0 22px rgba(77, 163, 255, 0.6);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 30px rgba(77, 163, 255, 0.9);
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 15.5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="hint">"Você é mãe do sol"</div>
+
+    <img src="foto.jpg" alt="Nós dois">
+
+    <p>
+      Mesmo que todas as flores murchassem e todas as borboletas morressem,
+      eu ainda estaria aqui.
+    </p>
+
+    <a
+      class="btn"
+      href="https://www.youtube.com/watch?v=rScwLoES2bM"
+      target="_blank">
+      🎧 Tocar música
+    </a>
+  </div>
+
+</body>
+</html>
