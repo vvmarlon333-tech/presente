@@ -1,92 +1,87 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Para você 🤍</title>
-  <style>
-    body {
-      margin: 0;
-      background: radial-gradient(circle at top, #0b1a2d, #050b14);
-      color: #dbe9ff;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+<style>
+  body {
+    margin: 0;
+    background: radial-gradient(circle at top, #0b1a2d, #050b14);
+    color: #dbe9ff;
+    font-family: 'Arial', sans-serif;
 
+    /* centralização real */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 16px; /* ESSENCIAL no celular */
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 420px; /* um pouco maior */
+    padding: 24px;
+
+    background: rgba(10, 25, 50, 0.45);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(60, 140, 255, 0.18);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    max-height: 55vh; /* evita ficar pequeno demais */
+    object-fit: cover;
+
+    border-radius: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #4da3ff;
+    box-shadow: 0 0 25px rgba(77, 163, 255, 0.5);
+  }
+
+  .hint {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 14px;
+    color: #8fc1ff;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e6f0ff;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 22px;
+    background: #4da3ff;
+    color: #020b1a;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 22px rgba(77, 163, 255, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 30px rgba(77, 163, 255, 0.9);
+  }
+
+  /* ajuste fino só para celular */
+  @media (max-width: 600px) {
     .container {
-      max-width: 400px;
-      padding: 24px;
-      background: rgba(10, 25, 50, 0.45);
-      border-radius: 18px;
-      box-shadow: 0 0 40px rgba(60, 140, 255, 0.15);
-      backdrop-filter: blur(6px);
-    }
-
-    img {
-      width: 100%;
-      border-radius: 14px;
-      margin-bottom: 20px;
-      border: 2px solid #4da3ff;
-      box-shadow: 0 0 25px rgba(77, 163, 255, 0.5);
-    }
-
-    .hint {
-      font-size: 14px;
-      opacity: 0.8;
-      margin-bottom: 12px;
-      color: #8fc1ff;
-      letter-spacing: 1px;
+      max-width: 95vw;
+      padding: 22px;
     }
 
     p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #e6f0ff;
-      margin-bottom: 18px;
+      font-size: 15.5px;
     }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 20px;
-      background: #4da3ff;
-      color: #020b1a;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 20px rgba(77, 163, 255, 0.6);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 28px rgba(77, 163, 255, 0.9);
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="hint">"Você é mãe do sol"</div>
-
-    <img src="foto.jpg" alt="Nós dois">
-
-    <p>
-      Mesmo que todas as flores murchassem e todas as borboletas morressem,
-      eu ainda estaria aqui.
-    </p>
-
-    <a
-      class="btn"
-      href="https://www.youtube.com/watch?v=rScwLoES2bM"
-      target="_blank">
-      🎧 Tocar música
-    </a>
-  </div>
-
-</body>
-</html>
-
+  }
+</style>
